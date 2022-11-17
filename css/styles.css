@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 7em;
+}
+
+nav h3 {
+    font-size: 2em;
+    font-family: 'Karla', sans-serif;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+}
+
+.menu a {
+    color: hsl(273, 4%, 51%);
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(270, 9%, 17%);
+}
+
+.menu button {
+    padding: 4px 18px;
+    background-color: hsl(0, 0%, 98%);
+    border: 1.7px solid black;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: grey;
+}
+
+.menu button:hover {
+    background-color: hsl(270, 9%, 17%);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/* end of nav editing
+starting of main editing */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 2em;
+}
+
+header {
+    background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 23%;
+    background-color: hsl(256, 26%, 20%);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 229px;
+    left: -1%;
+    z-index: 0;
+    background: url(../images/bg-pattern-intro-left-desktop.svg) 0 0 no-repeat;
+    transform: rotate(-3deg);
+}
+
+article {
+    color: hsl(0, 0%, 98%);
+    width: 34%;
+    height: 50px;
+    position: relative;
+    padding: 50px;
+    margin-top: 139px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+article:after {
+    content: "";
+    position: absolute;
+    left: 48px;
+    bottom: 80px;
+    height: 3vh;
+    width: 6vw;
+    border-top: 1px solid grey;
+}
+
+article h1 {
+    font-size: 50px;
+    line-height: 1;
+}
+
+article p {
+    width: 34em;
+    font-family: 'Karla';
+    color: hsl(0deg 4% 72%);
+}
+
+article button {
+    padding: 5px 7px;
+    background-color: hsl(256, 26%, 20%);
+    border: 1.7px solid hsl(0, 0%, 98%);
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    width: 38%;
+}
+
+article button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+    cursor: pointer;
+}
+
+header img {
+    width: 400px;
+    position: relative;
+    top: 150px;
+}
+
+/* end of header editing in main 
+beggining of first section editing */
+.main-dif {
+    background-image: url(../images/bg-pattern-intro-left-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-y: -80%;
+    padding: 13em 0 5em 14em;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.main-dif::before {
+    content: "";
+    position: relative;
+    left: 4px;
+    top: 2em;
+    height: 3vh;
+    width: 6vw;
+    border-top: 2px solid rgb(198, 221, 241);
+}
+
+aside {
+    display: flex;
+    gap: 39px;
+    width: 74%;
+}
+
+aside section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+aside img {
+    width: 70px;
+}
+
+aside div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 24vw;
+}
+
+aside h3 {
+    font-size: 1.7em;
+}
+
+.txt p {
+    color: rgb(156, 156, 156);
+    font-family: karla, sans-serif;
+}
+
+.work {
+    width: 75%;
+    background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 37%;
+    background-color: hsl(256, 26%, 20%);
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    gap: 19em;
+}
+
+.work h1 {
+    color: hsl(0, 0%, 98%);
+    font-size: 2.5em;
+    font-family: serif;
+}
+
+.work button {
+    background-color: hsl(256, 26%, 20%);
+    border: 1.7px solid hsl(0, 0%, 98%);
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    padding: 5px;
+}
+
+.work button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+    cursor: pointer;
+}
+
+/* end of main editing
+begining of footer editing */
+footer {
+    background-color: hsl(0, 0%, 98%);
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 26%;
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-items: flex-start;
+}
+
+.compny-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.compny-logo h3 {
+    font-size: 2em;
+    font-family: 'Karla', sans-serif;
+}
+
+.logos a:hover {
+    background-color: black;
+    cursor: cursor;
+}
+
+.faq {
+    display: flex;
+    gap: 15em;
+}
+
+.quests {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quests div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: karla, sans-serrif;
+    text-transform: uppercase;
+}
+
+.quests h6 {
+    color: hsl(218, 7%, 76%);
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: karla, sans-serrif;
+}
+
+.quests a {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+}
+
+.quests a:hover {
+    text-decoration: underline black;
+}
